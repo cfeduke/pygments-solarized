@@ -1,0 +1,19 @@
+#/bin/sh
+
+# you will most likely require sudo to perform a copy to this directory
+
+PYGMENTS_STYLES_PATH=/Library/Python/2.7/site-packages/pygments/styles
+
+if [ ! -d "$PYGMENTS_STYLES_PATH" ]; then
+  echo "Directory $PYGMENT_STYLES_PATH does not exist"
+  exit 1
+fi
+
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+
+cp "$DIR/styles/"* $PYGMENTS_STYLES_PATH
+echo "Contents of $DIR/styles copied to $PYGMENTS_STYLES_PATH"
+echo "pygments can now be ran with:"
+echo "    solarizeddark"
+echo "    solarizeddark256"
+echo "    solarizedlight"
