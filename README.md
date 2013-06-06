@@ -11,7 +11,7 @@ or have an alternative install already in place)
 For OSX Mountain Lion:
 
 ```bash
-    $ git clone URL
+    $ git clone git://github.com/cfeduke/pygments-solarized.git
     $ cd pygments-solarized
     $ sudo ./install
 ```
